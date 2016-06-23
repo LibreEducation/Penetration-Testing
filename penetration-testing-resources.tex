@@ -5,25 +5,39 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[colorinlistoftodos]{todonotes}
-\usepackage{hyperref}
 \usepackage{fontspec}
 \usepackage{geometry}
 \usepackage{layout}
+\usepackage{titling}
+
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+}
 
 \setmainfont{Arial}
 
 \title{Penetrating Testing Resources}
-\date{}
+\subtitle{Penetration Testing}
+\date{} 
 \author{Libre Education}
 \begin{document}
 \maketitle
+
+
+\begin{figure}[b]
+\includegraphics{BY-SA}
+\centering
+\end{figure}
 
 \newpage
 
 \section{Tools}
 
 \begin{enumerate}
-	\item Kali Linux Tools Listing (http://tools.kali.org/tools-listing)
+	\item Kali Linux Tools Listing (tools.kali.org/tools-listing)
 	\item Metasploit Project - Wikipedia (en.wikipedia.org/wiki/Metasploit\_Project)
 \end{enumerate}
 
@@ -31,6 +45,7 @@
 \begin{enumerate}
 	\item Website (www.metasploit.com/)
 	\item Metasploit Project - Wikipedia (en.wikipedia.org/wiki/Metasploit\_Project)
+    \item Metasploit Framework - GitHub (https://github.com/rapid7/metasploit-framework)
 \end{enumerate}
 
 \subsection{Nmap}
